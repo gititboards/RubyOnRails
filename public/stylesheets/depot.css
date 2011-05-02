@@ -119,6 +119,9 @@ font: small-caps 40px/40px "Times New Roman", serif;
 color: #282;
 text-align: center;
 }
+#store .entry form, #store .entry form div {
+ display: inline;
+}
 #banner img {
 float: left;
 }
