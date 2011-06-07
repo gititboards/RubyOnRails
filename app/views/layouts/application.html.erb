@@ -19,25 +19,19 @@
     <div id="side">
       <!-- START_HIGHLIGHT -->
       <!-- START:hidden_div -->
-<!-- START_HIGHLIGHT -->
-      <% if @cart %>
-<!-- END_HIGHLIGHT -->
-        <%= hidden_div_if(@cart.line_items.empty?, :id => "cart") do %>
-          <%= render @cart %>
-        <% end %>
-
-<!-- START_HIGHLIGHT -->
+      <%= hidden_div_if(@cart.line_items.empty?, :id => "cart") do %>
+        <%= render @cart %>
       <% end %>
-<!-- END_HIGHLIGHT -->
     <!-- END:hidden_div -->
+
       <!-- END_HIGHLIGHT -->
 
       <a href="http://www....">Home</a><br />
       <a href="http://www..../faq">Questions</a><br />
       <a href="http://www..../news">News</a><br />
-
       <a href="http://www..../contact">Contact</a><br />
     </div>
+
     <div id="main">
       <%= yield %>
     </div>
